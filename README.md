@@ -9,13 +9,18 @@
 ## **Frontend**
 ## **Backend**
 ### ***Tổng quan***:
+
 - Hệ thống sử dụng hệ mô hình MVC + repository pattern
+
 ### ***Setting***:
 * **Yêu  cầu cơ bản**:
+
     1. Cài đặt mongoDB trên cổng 27017:27017 ( em sử dụng trên docker)
     2. Mongo và các thư viện khác (Đã được thêm vào folder vendor)
     3. Cổng chạy server : 8386
+
 * **Cấu trúc thư mục**:
+
     1. public : chứa file **main.go** là file main để chạy chương trình ( có thể chạy bằng fresh).
     2. config : chứa file database.go là file kết nối tới mongoDB // initDB.
     3. controller: chứa các file điều khiển // websocket_controller , user_controller, product_controller.
@@ -29,9 +34,13 @@
     11. websocket : file chứa xử lý websocket // websocket.go
     12. go.mod
     13. go.sum
-#### ***Testing***:
+
+### ***Testing***:
+
 1. **URL API là** : http://localhost:8386/api/
+
 2. **URL Websocket** : ws://localhost:8386/ws ( không yêu cầu auth)
+
 3. **URL user** :
     * Register: http://localhost:8386/register
         1. Header: Không có yêu cầu
